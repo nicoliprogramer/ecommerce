@@ -31,6 +31,10 @@ export const signOff = async (req, res) => {
   });
 };
 
+export const forTheHome = async (req, res) => {
+  res.redirect("/home");
+};
+
 export const findHome = async (req, res) => {
   const user = req.user;
   if (user === undefined) {

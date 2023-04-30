@@ -23,6 +23,7 @@ import {
   getErrorLogin,
   getErrorRegister,
   findHome,
+  forTheHome,
 } from "../controllers/user.js";
 
 import afterPurchase from "../controllers/buy.js";
@@ -32,6 +33,7 @@ const upload = multer({ dest: "./public/img/uploads/" });
 passport.use("register", whenSignUp);
 passport.use("login", whenLogin);
 
+const redirectHome = Router();
 const dosignup = Router();
 const dologin = Router();
 const home = Router();
@@ -45,11 +47,11 @@ dosignup.post(
   "/",
   upload.single("photo"),
   passport.authenticate("register", {
-    failureRedirect: "dosignup/errorRegistro",
+    failureRedirect: "dosignup/errorregistration",
     successRedirect: "/home",
   })
 );
-dosignup.get("/errorRegistro", getErrorRegister); // corregir error en login and register
+dosignup.get("/errorregistration", getErrorRegister); // corregir error en login and register
 
 dologin.get("/", getSignIn);
 dologin.post(
@@ -60,6 +62,8 @@ dologin.post(
   })
 );
 dologin.get("/errordologin", getErrorLogin); // // // //
+
+redirectHome.get("/", forTheHome);
 
 home.get("/", findHome);
 
@@ -77,4 +81,4 @@ buy.post("/", authentication, afterPurchase);
 
 logout.get("/", signOff);
 
-export { home, products, dologin, dosignup, logout, cart, buy };
+export { redirectHome, home, products, dologin, dosignup, logout, cart, buy };

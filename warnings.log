@@ -706,3 +706,23 @@
   moreInfo: 'https://www.twilio.com/docs/errors/20003',
   details: undefined
 }
+[2023-04-30T17:13:30.181] [ERROR] default - Error: Authenticate
+    at success (C:\Users\Pc\Desktop\AVER\proyecto-final-backend\node_modules\twilio\lib\base\Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Whatsapp (file:///C:/Users/Pc/Desktop/AVER/proyecto-final-backend/services/twilio.js:16:21)
+    at async afterPurchase (file:///C:/Users/Pc/Desktop/AVER/proyecto-final-backend/controllers/buy.js:16:3) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2023-04-30T17:14:32.540] [ERROR] default - Error: Authenticate
+    at success (C:\Users\Pc\Desktop\AVER\proyecto-final-backend\node_modules\twilio\lib\base\Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Whatsapp (file:///C:/Users/Pc/Desktop/AVER/proyecto-final-backend/services/twilio.js:16:21)
+    at async afterPurchase (file:///C:/Users/Pc/Desktop/AVER/proyecto-final-backend/controllers/buy.js:16:3) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}

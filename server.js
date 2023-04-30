@@ -8,6 +8,7 @@ import { Server } from "socket.io";
 import { createServer } from "http";
 
 import {
+  redirectHome,
   dologin,
   products,
   dosignup,
@@ -69,6 +70,7 @@ if (cluster.isPrimary) {
 
   //----------------------------------------------------//
   // Routes
+  app.use("/", redirectHome);
   app.use("/signup", dosignup);
   app.use("/login", dologin);
   app.use("/home", home);
@@ -76,10 +78,6 @@ if (cluster.isPrimary) {
   app.use("/logout", logout);
   app.use("/cart", cart);
   app.use("/buy", buy);
-
-  app.get("/", (req, res) => {
-    res.redirect("/home");
-  });
   app.get("/messages", (req, res) => {
     const user = req.user;
     if (user === undefined) {
