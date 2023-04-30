@@ -1,16 +1,16 @@
 # proyecto-final-backend ecommerce
 
 Comercio electrónico que permite a los navegantes convertirse en usuarios, clientes registrados que comprarán productos en stock disponibles. Se le adicionan algunos detalles como un chat donde se puede interactuar.
-Se preserva información en la base de datos "Mongoose Atlas" de los usuarios, los productos, mensajes y las compras junto con datos útiles para el delivery.
+Se preserva información en la base de datos Mongoose Atlas de los usuarios, los productos, mensajes y las compras junto con datos útiles para el delivery, que tambien se traslada a través de mails.
 
-Variables de entorno modificables en archivo .env:
+Variables de entorno modificables en archivo ".env":
 
 - PORT: puerto de escucha del servidor.
 - MONGO_CONNECT: base de datos con usuario registrado en MongoDB.
 - USER & PASS : correo electronico y token (permisos especificos) donde se guarda el registro de los nuevos usuarios en plataforma y confirmacion de compra .
 - ACCOUNTSID, AUTHTOKEN & FROM: datos necesarios para confirmar la compra via whatsApp.
 
-API que utiliza motor de plantilla pug, en donde se divide en dos carpetas: withoutUser y userLogged. Fuera de estas carpetas se encuentra un archivo intermediario entre ambos estados. Genera facilidad y orden al visualizar el codigo pasando del back end al front end.
+API que utiliza motor de plantilla pug, en donde se divide en dos carpetas: withoutUser y userLogged. Fuera de estas carpetas se encuentra un archivo intermediario entre ambos estados. Genera facilidad y orden al visualizar el codigo en su extensión desde el back end hasta front end.
 
 ---
 
@@ -37,7 +37,7 @@ Rutas con usuario (userLogged)
 "/cart {POST}": se utiliza el id del producto cargar productos al carrito.
 "/cart/product {POST}": posibilita borrar producto específico del carrito utilizando el id del producto.
 "/cart {DELETE}": posibilita borrar todos los productos del carrito.
-"/buy {POST}": finaliza la compra del contenido del carrito y se trasladan los datos para avisar su confirmación.
+"/buy {POST}": finaliza la compra del contenido del carrito y se trasladan datos para avisar su confirmación.
 "/logout {POST}": cerrar sesión.
 
 ---
