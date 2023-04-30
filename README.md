@@ -1,7 +1,7 @@
 # proyecto-final-backend ecommerce
 
 Comercio electrónico que permite a los navegantes convertirse en usuarios, clientes registrados que comprarán productos en stock disponibles. Se le adicionan algunos detalles como un chat donde se puede interactuar.
-Se preserva información en la base de datos Mongoose Atlas de los usuarios, los productos, mensajes y las compras junto con datos útiles para el delivery.
+Se preserva información en la base de datos "Mongoose Atlas" de los usuarios, los productos, mensajes y las compras junto con datos útiles para el delivery.
 
 Variables de entorno modificables en archivo .env:
 
@@ -11,6 +11,8 @@ Variables de entorno modificables en archivo .env:
 - ACCOUNTSID, AUTHTOKEN & FROM: datos necesarios para confirmar la compra via whatsApp.
 
 API que utiliza motor de plantilla pug, en donde se divide en dos carpetas: withoutUser y userLogged. Fuera de estas carpetas se encuentra un archivo intermediario entre ambos estados. Genera facilidad y orden al visualizar el codigo pasando del back end al front end.
+
+---
 
 Rutas sin usuario (withoutUser)
 
@@ -37,3 +39,11 @@ Rutas con usuario (userLogged)
 "/cart {DELETE}": posibilita borrar todos los productos del carrito.
 "/buy {POST}": finaliza la compra del contenido del carrito y se trasladan los datos para avisar su confirmación.
 "/logout {POST}": cerrar sesión.
+
+---
+
+Dependencias en uso
+
+bcrypt, connect-mongo, cookie-parser, dotenv, express, express-session, log4js, mongoose, multer, nodemailer, nodemon, passport,passport-local, pug, socket.io & twilio
+
+---
