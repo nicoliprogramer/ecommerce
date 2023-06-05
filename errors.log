@@ -1,0 +1,31 @@
+[2023-06-05T10:34:06.407] [ERROR] default - Error: Authenticate
+    at success (C:\Users\Pc\Desktop\nico\proyecto-final-backend\node_modules\twilio\lib\base\Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Whatsapp (file:///C:/Users/Pc/Desktop/nico/proyecto-final-backend/services/twilio.js:16:21)
+    at async afterPurchase (file:///C:/Users/Pc/Desktop/nico/proyecto-final-backend/controllers/buy.js:16:3) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2023-06-05T10:38:49.709] [ERROR] default - Error: Authenticate
+    at success (C:\Users\Pc\Desktop\nico\proyecto-final-backend\node_modules\twilio\lib\base\Version.js:79:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Whatsapp (file:///C:/Users/Pc/Desktop/nico/proyecto-final-backend/services/twilio.js:16:21)
+    at async afterPurchase (file:///C:/Users/Pc/Desktop/nico/proyecto-final-backend/controllers/buy.js:16:3) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2023-06-05T10:57:59.139] [ERROR] default - Error: Authenticate
+    at success (C:\Users\Pc\Desktop\nico\proyecto-final-backend\node_modules\twilio\lib\base\Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Whatsapp (file:///C:/Users/Pc/Desktop/nico/proyecto-final-backend/services/twilio.js:16:21)
+    at async afterPurchase (file:///C:/Users/Pc/Desktop/nico/proyecto-final-backend/controllers/buy.js:16:3) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}

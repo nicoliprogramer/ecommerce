@@ -21,6 +21,6 @@ h3 Products
                         td= val.photo
                         td
                             form(onsubmit=`return SendToCart('${val._id}')`)
-                                button(type='submit') Take to Cart
+                                button(type='submit') Take
     else
         h3(class='alert alert-danger') No products
